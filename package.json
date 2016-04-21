@@ -1,15 +1,25 @@
 {
-  "name": "browsermob-proxy-api",
+  "name": "browsermob-proxy-api-test",
   "version": "0.3.1",
   "description": "NodeJS bindings for controlling a browsermob-proxy instance (creating ports, HARs, etc)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node generateHar.js"
   },
-  "keywords": ["nodejs", "browsermob-proxy", "API", "HAR", "test"],
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "browsermob-proxy",
+    "API",
+    "HAR",
+    "test"
+  ],
   "author": "jmangs",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/jmangs/node-browsermob-proxy.git"
+    "type": "git",
+    "url": "https://github.com/jmangs/node-browsermob-proxy.git"
+  },
+  "dependencies": {
+    "webdriverjs": "~1.6.1"
   }
 }
