@@ -4,7 +4,27 @@ This project provides a NodeJS interface for interacting with a running BrowserM
 
 ## Usage
 
-Installation command is ```npm install browsermob-proxy-api```
+First clone the **Browsermob Proxy API** with the following command:
+```
+$ git clone git@github.com:sbmallik/node-browsermob-proxy-api.git
+```
+
+Install the dependent packages:
+```
+$ npm install
+```
+
+Download the _browsermob proxy_ bundle from this [link](https://github.com/lightbody/browsermob-proxy/releases/download/browsermob-proxy-2.1.0-beta-5/browsermob-proxy-2.1.0-beta-5-bin.zip) and extract the contents in a local folder. Start the browsermob proxy as described in this [link](https://github.com/lightbody/browsermob-proxy#rest-api).
+Also start the selenium server with the following command in the root directory:
+```
+$ java -jar node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.53.0.jar
+```
+
+Finally run the test with this command:
+```
+$ node generateHar.js
+```
+
 
 ## Documentation
 

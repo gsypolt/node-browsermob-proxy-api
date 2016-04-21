@@ -20,6 +20,8 @@
     "url": "https://github.com/jmangs/node-browsermob-proxy.git"
   },
   "dependencies": {
+    "browsermob-proxy-api": "",
+    "selenium-server-standalone-jar": "2.53.0",
     "webdriverjs": "~1.6.1"
   }
 }

@@ -26,7 +26,7 @@ proxy.startPort(proxyPort, function(err, data) {
         console.log('In set headers branch.');
         proxy.createHAR(proxyPort, harSpecs, function(err, resp) {
           if (!err) {
-            console.log('In crate HAR branch.');
+            console.log('In create HAR branch.');
             doSeleniumStuff(proxyHost + ':' + proxyPort, function() {
               proxy.getHAR(proxyPort, function(err, resp) {
                 if(!err) {
